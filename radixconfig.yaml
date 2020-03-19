@@ -4,7 +4,7 @@ metadata:
   name: knyt-radix-example-oauth-proxy
 spec:
   environments:
-    - name: prod
+    - name: prod 
       build:
         from: master
   components:
