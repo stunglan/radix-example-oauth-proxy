@@ -18,3 +18,6 @@ yarn-debug.log*
 yarn-error.log*
 
 .vscode
+
+#my exclude files
+myenv.ps1

@@ -58,7 +58,7 @@ const isAuthorized = (req, roles) => {
 
 // Generic request handler
 app.get("*", (req, res) => {
-  console.log(`Request received by the API: ${req.method} ${req.originalUrl}`);
+  console.log(`Request received by the API - 1: ${req.method} ${req.originalUrl}`);
   // if (!isAuthorized(req, ["Radix"])){
   if (!isAuthorized(req, [])) {
     res.sendStatus(403);
@@ -66,7 +66,7 @@ app.get("*", (req, res) => {
   }
 
   let output = `
-    Request received by the API: ${req.method} ${req.originalUrl}
+    Request received by the API - 2: ${req.method} ${req.originalUrl}
     Headers: ${JSON.stringify(req.headers, null, 2)}
   `;
 

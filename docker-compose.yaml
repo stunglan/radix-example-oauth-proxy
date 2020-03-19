@@ -2,7 +2,7 @@ version: "3.5"
 
 networks:
   radix-example-front-proxy:
-    name: radix-example-front-proxy
+    name: knyt-radix-example-front-proxy
 
 services:
   api:
