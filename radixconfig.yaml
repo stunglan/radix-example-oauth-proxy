@@ -29,7 +29,7 @@ spec:
             OAUTH2_PROXY_CLIENT_ID: "efef90d1-b530-4fb5-a06f-f9d4d5b538ad" # client id for the UI. Application exist under Azure Active Directory -> App registration
             OAUTH2_PROXY_SCOPE: "openid email offline_access c6d58607-6f91-461d-b603-bbd1c48bfee2/user_impersonation" # UID is resource client id for API. Application exist under Azure Active Directory -> App registration
             # OAUTH2_PROXY_SCOPE: "openid email offline_access" # Simplified scope - If api is not public, and you only want to authenticate the client
-            OAUTH2_PROXY_REDIRECT_URL: "https://knyt-radix-example-oauth-proxy.app.playground.radix.equinor.com/oauth2/callback"
+            OAUTH2_PROXY_REDIRECT_URL: "https://auth-proxy-knyt-radix-example-oauth-proxy-prod.radix.equinor.com/oauth2/callback"
             OAUTH2_PROXY_UPSTREAMS: "http://frontend:8001" # where authenticated requests are routed to
             OAUTH2_PROXY_HTTP_ADDRESS: "http://:8000"
             OAUTH2_PROXY_SESSION_STORE_TYPE: "redis" # We're using Redis for storing session info instead of cookies (cookies get too big for Edge and Safari)
